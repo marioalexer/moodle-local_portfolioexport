@@ -29,6 +29,22 @@ Ideal para procesos de **auditoría gubernamental** o portafolios de evidencias 
 4. Una vez finalizado (puedes refrescar la página), entra a **Ver Archivos**.
 5. Usa el botón **Iniciar Descarga en Cascada** para bajar todos los portafolios a tu ordenador.
 
+## 🏛️ Estructura
+/
+├── cli/
+│   └── export.php
+├── lang/
+│   ├── en/local_portfolioexport.php
+│   └── es/local_portfolioexport.php
+│   └── es_mx/local_portfolioexport.php
+├── pix/
+│   └── icon.svg
+├── index.php
+├── settings.php
+├── version.php
+├── README.md
+└── LICENSE
+
 ## ⚖️ Licencia
 Distribuido bajo la licencia GPL v3. Consulta el archivo `LICENSE` para más detalles.
 
