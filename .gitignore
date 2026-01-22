@@ -1,0 +1,11 @@
+# Extensiones de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de log que se generan durante el uso
+debug_log_curso_*.txt
+
+# Temporales de editores
+.vscode/
+.idea/
+*.swp
