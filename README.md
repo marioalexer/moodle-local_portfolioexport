@@ -34,3 +34,19 @@ Distribuido bajo la licencia GPL v3. Consulta el archivo `LICENSE` para más det
 
 ---
 Desarrollado para resolver necesidades urgentes de portafolios de evidencias. ¡Las contribuciones y forks son bienvenidos!
+
+## 🛠 Solución de Problemas (Troubleshooting)
+
+### 1. Las descargas son de 0 bytes o fallan
+**Causa:** El usuario web no tiene permisos sobre los archivos generados por la CLI.
+**Solución:** Asegúrate de que la carpeta de destino en `moodledata` tenga permisos correctos:
+`chmod -R 775 /ruta/a/moodledata/portfolio_dump`
+
+### 2. El proceso no inicia (No se crean carpetas)
+**Causa:** La ruta del ejecutable PHP es incorrecta o `exec()` está deshabilitado.
+**Solución:** - Verifica la ruta en la configuración del plugin (ej. `/usr/bin/php`).
+- Asegúrate de que `exec` no esté en la lista `disable_functions` de tu `php.ini`.
+
+### 3. El navegador bloquea la descarga en cascada
+**Causa:** Protección de seguridad contra descargas múltiples.
+**Solución:** Al iniciar la descarga, haz clic en el icono de bloqueo en la barra de direcciones del navegador y selecciona "Permitir siempre descargas múltiples de este sitio".
